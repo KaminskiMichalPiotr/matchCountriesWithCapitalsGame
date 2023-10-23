@@ -1,0 +1,59 @@
+.game-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 560px) {
+  .game-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.game-option {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.game-option-selected {
+  border: 1px solid #4009bf;
+  background-color: #4009bf;
+  color: white;
+}
+
+.game-option-wrong {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+
+.game-option-hidden {
+  visibility: hidden;
+}
+
+.game-option-disabled {
+  cursor: not-allowed;
+}
+
+.game-title {
+  text-align: center;
+}
+
+.game-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-restart {
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: blue;
+  color: white;
+  font-size: large;
+}
